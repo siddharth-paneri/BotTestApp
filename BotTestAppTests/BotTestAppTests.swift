@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import BotTestApp
 
 class BotTestAppTests: XCTestCase {
 
@@ -39,6 +40,10 @@ class BotTestAppTests: XCTestCase {
             }
             print("Code1 test success")
         }
+        
+        self.measure {
+            TestClass.someFunction()
+        }
     }
     
     func testCode2() {
@@ -50,6 +55,10 @@ class BotTestAppTests: XCTestCase {
                 i += 1
             }
             print("Code1 test success")
+        }
+        
+        self.measure {
+            TestClass.someFunction()
         }
     }
 
